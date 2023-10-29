@@ -1,3 +1,62 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #111111;
+  background-color: #fafafa;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+.container {
+  max-width: 1136px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+/* ====================== header ============================= */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+.header-address {
+  display: flex;
+  gap: 14px;
+  padding-left: 0;
+}
+.header-nav {
+  display: flex;
+  gap: 365px;
+}
+.header-nav-cards {
+  display: flex;
+  gap: 24px;
+  padding-left: 0;
+}
 /*<!-- ====================== Start page section ====================== --> */
 
 /* <!-- ======================== Beefit section ============================--> */
