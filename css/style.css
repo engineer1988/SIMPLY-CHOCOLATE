@@ -12,6 +12,7 @@ body {
 
 a {
   text-decoration: none;
+  color: currentColor;
 }
 
 h1,
@@ -42,6 +43,8 @@ img {
 .header-container {
   display: flex;
   justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .header-address {
   display: flex;
@@ -56,6 +59,35 @@ img {
   display: flex;
   gap: 24px;
   padding-left: 0;
+  align-items: center;
+}
+.logo {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: -0.03em;
+  display: flex;
+  align-items: center;
+}
+.header-nav-item {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+}
+.header-social {
+  border-radius: 10px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+}
+.header-logo {
+  font-style: italic;
+  margin-right: 4px;
+}
+.header-logo-svg {
+  margin-left: 4px;
 }
 /*<!-- ====================== Start page section ====================== --> */
 
