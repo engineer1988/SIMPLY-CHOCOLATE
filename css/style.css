@@ -81,6 +81,7 @@ img {
   width: 40px;
   height: 40px;
   padding: 8px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-logo {
   font-style: italic;
@@ -112,12 +113,14 @@ img {
   letter-spacing: -0.03em;
   width: 484px;
   height: 102px;
+  margin-bottom: 32px;
 }
 .start-page-section {
   padding: 381px 40px 40px;
 }
 .angle-svg {
   fill: #fd9222;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .angle-text {
   color: #fff;
@@ -125,6 +128,8 @@ img {
   font-weight: 500;
   line-height: 1.28;
   letter-spacing: -0.03em;
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .angle-scroll {
   width: 38px;
@@ -135,6 +140,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .buy-now {
   width: 144px;
@@ -145,6 +151,16 @@ img {
   color: #fff;
   font-size: 14px;
   font-weight: 600;
+  margin-right: 14px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.buy-now:hover {
+  background-color: #fcf1e0;
+  color: #fd9222;
+  border: 1px solid #fcf1e0;
 }
 .how-its-made {
   width: 183px;
@@ -155,6 +171,34 @@ img {
   font-size: 14px;
   font-weight: 600;
   background-color: inherit;
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.how-its-made:hover {
+  color: #fd9222;
+  border: 1px solid #fd9222;
+}
+.start-page-down {
+  display: flex;
+  justify-content: space-between;
+}
+.scroll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+.scroll:hover {
+  .angle-text {
+    color: #fd9222;
+  }
+  .angle-svg {
+    fill: #fff;
+  }
+  .angle-scroll {
+    background-color: #fd9222;
+  }
 }
 /* <!-- ======================== Beefit section ============================--> */
 
