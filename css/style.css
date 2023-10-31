@@ -81,7 +81,8 @@ img {
   width: 40px;
   height: 40px;
   padding: 8px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-logo {
   font-style: italic;
@@ -92,8 +93,12 @@ img {
 }
 .header-social:hover {
   fill: #fd9222;
+  border: 1px solid rgba(253, 146, 34, 0.1);
 }
 /*<!-- ====================== Start page section ====================== --> */
+.start-page-section {
+  margin-bottom: 80px;
+}
 .start-page-container {
   background-image: linear-gradient(
       rgba(17, 17, 17, 0.4),
@@ -115,7 +120,7 @@ img {
   height: 102px;
   margin-bottom: 32px;
 }
-.start-page-section {
+.start-page {
   padding: 381px 40px 40px;
 }
 .angle-svg {
@@ -200,8 +205,77 @@ img {
     background-color: #fd9222;
   }
 }
-/* <!-- ======================== Beefit section ============================--> */
+/* <!-- ======================== Benefit section ============================--> */
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.benefit-section-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.benefit-section-text {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  width: 308px;
+}
+.benefit-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #1e1823;
+  margin-bottom: 120px;
+  /* padding: 50px; */
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.benefit-section > .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+.benefit-section-icon {
+  width: 62px;
+  height: 62px;
+  border-radius: 365px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 22px;
+}
+.benefit-cards {
+  display: flex;
+  gap: 88px;
+  padding-left: 0;
+}
+.benefit-item {
+  flex-basis: calc((100% - 2 * 88px) / 3);
+  position: relative;
+}
+.benefit-item:not(:last-child):after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -44px;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 124px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
 /* <!-- ================================Ingridients section ============== --> */
 
 /* <!-- ============= How it's made section ========================= --> */
